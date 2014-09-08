@@ -1,0 +1,33 @@
+<h3>Multiplication of first 10 prime numbers</h3>
+
+<%= form_tag '', :method => :get do %>
+  <%= text_field_tag(:number_prime, '', :placeholder => "Pick a Number") %>
+  <%= submit_tag("Submit", :class => 'btn btn-primary select-purchased-button') %>
+<% end %>
+
+<table>
+  <thead>
+    <th>
+
+    </th>
+    <% (1..@number).each do |i| %>
+      <th>
+        <%= i %>
+      </th>
+    <% end %>
+  </thead>
+  <tbody>
+    <% (1..@number).each do |i| %>
+      <tr>
+        <td>
+          <%= i %>
+        </td>
+        <% (1..@number).each do |j| %>
+          <td>
+            <%= i * j %>
+          </td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
