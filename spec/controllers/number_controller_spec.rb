@@ -10,7 +10,7 @@ describe NumberController do
 
       it "should return the prime numbers" do
         get :index, :number_prime => 5
-        assigns(:prime_numbers).should == [1 ,2 ,3, 5, 7]
+        assigns(:prime_numbers).should == [2 ,3, 5, 7, 11]
       end
    end
 end

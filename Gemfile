@@ -41,6 +41,7 @@ gem 'spring',        group: :development
 group :test, :development, :staging do
   gem 'factory_girl'
   gem 'factory_girl_rails'
+  gem 'byebug'
   gem 'rspec'
   gem 'rspec-rails'
 end

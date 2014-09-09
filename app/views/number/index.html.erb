@@ -10,19 +10,19 @@
     <th>
 
     </th>
-    <% (1..@number).each do |i| %>
+    <% @prime_numbers.each do |i| %>
       <th>
         <%= i %>
       </th>
     <% end %>
   </thead>
   <tbody>
-    <% (1..@number).each do |i| %>
+    <% @prime_numbers.each do |i| %>
       <tr>
         <td>
           <%= i %>
         </td>
-        <% (1..@number).each do |j| %>
+        <% @prime_numbers.each do |j| %>
           <td>
             <%= i * j %>
           </td>
